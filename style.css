@@ -74,10 +74,11 @@ section h2::after {
     align-items: center;
 }
 .hero h1 {
-    font-size: 4.5rem;
+    font-size: clamp(2rem, 5vw, 4.5rem);
     font-weight: 700;
     margin-bottom: 1.5rem;
-    line-height: 1.1;
+    line-height: 1.2;
+    white-space: normal;
 }
 .hero .highlight {
     color: transparent;
@@ -85,9 +86,10 @@ section h2::after {
     background: linear-gradient(90deg, #38bdf8, #a855f7);
     -webkit-background-clip: text;
     background-clip: text;
+    white-space: nowrap;
 }
 #typing-text {
-    font-size: 1.5rem;
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
     color: #9ca3af;
 }
 .skills-grid {
